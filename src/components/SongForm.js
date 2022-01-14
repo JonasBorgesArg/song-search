@@ -31,8 +31,8 @@ const SongForm = ({handleSearch}) =>{
 	return (
 		<div className="form-container">
 			<form onSubmit={handleSubmit} className="form">
-			<input className="form-artist" type="text" name="artist" placeholder="Artist Name" onChange={handleChange} value={form.artist} />
-			<input className="form-song" type="text" name="song" placeholder="Song Name" onChange={handleChange} value={form.song} />
+			<input className="form-artist" type="text" name="artist" placeholder="ARTIST NAME" onChange={handleChange} value={form.artist} />
+			<input className="form-song" type="text" name="song" placeholder="SONG NAME" onChange={handleChange} value={form.song} />
 			<div className="submit">
 				<input className="form-send" type="submit" value="Search" />
 			</div>
