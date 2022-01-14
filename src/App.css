@@ -1,38 +1,118 @@
-.App {
+
+.search-container{
+  width: 100%;
+}
+
+/**************   LOGO   **************/
+.search-container .logo{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-container h2{
+  padding: 1rem;
+  color: rgb(90, 99, 140);
+  font-size: 2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/**************   LOADING   **************/
+.loader{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+/**************   FORMULARIO   **************/
+.form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media screen and (max-width: 768px){
+  .form{
+    flex-direction: column;
+    text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  }
+  .form .form-artist, .form .form-song{
+    width: 50%;
+  }
+  .submit{
+    width: 100%;
+  }
+  .form-send{
+    width: 25%;
+  }
+}
+.form-artist, .form-song{
+  margin: .1rem;
+  width: 25%;
+  height: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid rgb(90, 99, 140);
+}
+.form .form-send{
+  border-radius: 10px;
+  height: 2rem;
+  border: 2px solid rgb(90, 99, 140);
+}
+.submit{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+/**************   INFO CANCION   **************/
+.info-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+  background-color: rgb(90, 99, 140);
+}
+@media screen and (max-width: 768px){
+  .info-container{
+    grid-template-columns: 1fr;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.artist-container{
+  padding: 10px;
+  border: 1px solid black;
+}
+.artist-container h3{
+  color: #fff;
+}
+.artist-container img{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.artist-container p{
+  color: #fff;
+  font: 1.2em solid bold;
+  width: 90%;
+}
+.artist-container a{
+  color: #fff;
+
+}
+
+.lyric-container{
+ padding: 10px;
+  border: 1px solid black; 
+}
+.lyric-container h3{
+  color: #fff;
+  padding-left: 10px;
+}
+.lyric-container blockquote{
+  color: #fff;
 }
